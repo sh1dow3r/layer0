@@ -4,22 +4,19 @@ email: 0xalamri@gmail.com
 description: "Because there is no such thing as zeroth layer in the TCP/IP stack layers, I made one which implays the **strongest** element of that stack (THE USER). This blog is "
 baseurl: ""
 url: "http://layer0.xyz"
-title_description: "A dark blog theme for Jekyll focusing on a clear reading experience. Large text and a narrow body makes carte noire a gorgeous read. With excellent code snippet support and integrated tools such as AddThis and Disqus giving your Jekyll blog all the functionality your users expect."
+title_description: "A dark blog theme ."
 title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
 google_analytics: "UA-20365477-4"
 disqus_account: cartenoire
-github_repository: https://github.com/jacobtomlinson/carte-noire
+github_repository: https://github.com/0xalamri/layer0
 addthis_id: ra-513c6fa83da6ec67
 post_limit: 5
 
 # Social usernames/URLs
-twitter_username: _jacobtomlinson
-github_username:  jacobtomlinson
+twitter_username: 0xalamri
+github_username:  0xalamri
 linkedin_link: https://www.linkedin.com/in/ali-alamri/
-google_plus_link: http://carte-noire.jacobtomlinson.co.uk/
-stackoverflow_link: http://carte-noire.jacobtomlinson.co.uk/
-xing_link:
-facebook_link:
+
 
 # Footer
 footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
