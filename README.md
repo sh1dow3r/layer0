@@ -1,1 +1,1 @@
-My website: Ali Alamri
+My future blog: Ali Alamri
