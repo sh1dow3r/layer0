@@ -1,9 +1,9 @@
 # Site settings
-title: "Layer Zero: where every thing starts from"
+title: "Layer Zero"
 email: 0xalamri@gmail.com
 baseurl: ""
 url: "http://layer0.xyz"
-title_description: "Because there is no such thing as zeroth layer in the TCP/IP stack layers, I made one which implays the **strongest** element of that stack (THE USER). This blog is!"
+title_description: "Because there is no such thing as layer zero in the TCP/IP stack layers, I made one which implays the 'strongest' element of that stack (THE USER)."
 title_image: "http://techdefencelabs.com/public/img/services/network-penetration.jpg"
 google_analytics: "UA-20365477-4"
 disqus_account: cartenoire
@@ -16,9 +16,8 @@ twitter_username: 0xalamri
 github_username:  0xalamri
 linkedin_link: https://www.linkedin.com/in/ali-alamri/
 
-# Footer
-#footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-#footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+
 
 # Build settings
 markdown: kramdown
