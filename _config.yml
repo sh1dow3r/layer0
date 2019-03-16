@@ -1,25 +1,24 @@
 # Site settings
-title: "Layer Zero: primialy network blog with few other stuff"
+title: "Layer Zero: where every thing starts from"
 email: 0xalamri@gmail.com
-description: "Because there is no such thing as zeroth layer in the TCP/IP stack layers, I made one which implays the **strongest** element of that stack (THE USER). This blog is "
 baseurl: ""
 url: "http://layer0.xyz"
-title_description: "A dark blog theme ."
-title_image: "https://www.gravatar.com/avatar/00000000000000000000000000000000?s=500&d=mm"
+title_description: "Because there is no such thing as zeroth layer in the TCP/IP stack layers, I made one which implays the **strongest** element of that stack (THE USER). This blog is!"
+title_image: "./_site/assets/sirfing.JPG"
 google_analytics: "UA-20365477-4"
 disqus_account: cartenoire
 github_repository: https://github.com/0xalamri/layer0
-addthis_id: ra-513c6fa83da6ec67
+addthis_id: ra-513c6fa83da6ec67 
 post_limit: 5
 
 # Social usernames/URLs
 twitter_username: 0xalamri
 github_username:  0xalamri
-linkedin_link: https://www.linkedin.com/in/ali-alamri10/
+linkedin_link: https://www.linkedin.com/in/ali-alamri/
 
 # Footer
-footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
-footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+#footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/_JacobTomlinson\">Jacob Tomlinson</a>"
+#footer_right: "&lt;/&gt; on <a href=\"https://github.com/jacobtomlinson/carte-noire\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
 
 # Build settings
 markdown: kramdown
