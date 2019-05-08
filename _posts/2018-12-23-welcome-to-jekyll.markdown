@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "NAS Agent"
-date:   2018-12-23 08:41:00 +0300
-categories: jekyll update
+categories: Auth update
 ---
 Network Attached Storage has been around for a while, however using that for backup has been increasing a non-negligible vector of the integrity of the backup. We designed an agent that implements an encrypted backup for the client to provide efficiency and fast disaster recovery. 
 
