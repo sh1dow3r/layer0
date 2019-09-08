@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "IP Source Guard"
+categories: Network Security
+---
 5 –      IPSG Attacks
 5.1.   Introduction
 IP Source Guard (IPSG) is a defense mechanism that is designed to prevent IP spoofing attacks. For instance, when someone wants to spoof the address of another host, this feature will prevent this spoofing because this IP address is not assigned by DHCP. IPSG works by relying on DHCP snooping and IP source bindings to match the IP address on untrusted Layer 2 networks.   
