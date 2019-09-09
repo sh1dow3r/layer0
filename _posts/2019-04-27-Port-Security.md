@@ -2,8 +2,9 @@
 layout: post
 title:  "Port Security"
 categories: Network Security
-date: 2019-04-27 00:00:00
+date: 2019-04-2
 ---
+
 # **Port Security Attack & Mitigation**
 ##   **Introduction**
 Before talking about port security we need to mention the operation process of layer 2 devices as known as “switches.” Switches operate by building tables, called context-addressable memory (CAM) tables, which the switch uses t map MAC address to their corresponding port. Depending on the version and capability of the switch, these tables can only maps a limited number of entries involving both (mac address, switch port number). One attack called CAM overflow takes advantage of this limitation to overflow the CAM table and disable the switching logic of the switch.
