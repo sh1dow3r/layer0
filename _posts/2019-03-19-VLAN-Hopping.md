@@ -47,3 +47,4 @@ There are several common best practices that network and system administration u
 Disabling dynamic port on non-usable ports on the switch
 Ensuring that swithcports are set to no negotiate which by default disables DTP.
 Not using VLAN 1 for inbound management traffic, and picking any other VLAN dedicated to that purpose. In other words, prune VLAN 1 from all the trunks and from all the access ports that don’t require it
+
