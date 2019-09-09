@@ -11,8 +11,7 @@ This attack occurs when an attacker connects to a port (or multiple ports) on a 
 
 #    **Constructed Topology**
 
-
-![Port Security Topology]({{site.baseurl}}img/port_security/1.2.png)
+![PS Topology]({{site.baseurl}}img/port_security/1.2.png)
 
 
 
