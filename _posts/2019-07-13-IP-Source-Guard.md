@@ -1,8 +1,46 @@
 ---
 layout: post
-title:  "IP Source Guard"
+title:  "ARP Spoofing & IP Source Guard"
 categories: Network Security
 ---
+
+4 –      ARP Attacks and Mitigation
+4.1  Introduction
+ARP is one of the most important networking protocol that other protocols rely on as it maps a mac address to an associated IP address. The attack we will be talking about is called ARP spoofing and is a type of Man-in-the-middle-attack in which the attacker tries to respond to ARP request with a forged packet.
+
+4.2   Topology
+
+4.3.   ARP Attacks:
+4.3.1.           ARP Spoofing
+Using the arpspoof tool, which is available in Kali Linux, I spoofed one of the clients MAC address.
+
+
+Kali IP and MAC address﻿
+
+arpspoof command on Kali
+
+REPORT THIS AD
+
+This will enable the attacker to inspect all traffic destined for 10.150.100.5 by redirecting to the Kali IP address then forward it back to the victim. As we can see in Wireshark capture.
+
+
+Wireshark during ARP spoofing command on Kali﻿
+4.3.2.           Dynamic ARP Inspection Mitigation
+When we want to avoid invalid and malicious ARP packets, we can use Dynamic ARP Inspection (DAI). This feature work similarly to DHCP snooping, in that if a client sends a message that is recognized as malicious it will drop these illegitimate packets.
+
+We start the switch configuration by applying DAI on the switch in
+
+
+Switch Configuration for DAI
+
+
+REPORT THIS AD
+
+REPORT THIS AD
+
+It’s worth notating that I applying the ACL “static ARP” which contains the IP and mac addresses for my clients.  Additionally, if I rerun the attack again we won’t see the packets on the victim’s machine as the packets gets dropped when it reaches the switch and does not get forwarded.  Additionally, the switch raises a lot of warnings to notify the network administrator as shown below.
+
+
 5 –      IPSG Attacks
 5.1.   Introduction
 IP Source Guard (IPSG) is a defense mechanism that is designed to prevent IP spoofing attacks. For instance, when someone wants to spoof the address of another host, this feature will prevent this spoofing because this IP address is not assigned by DHCP. IPSG works by relying on DHCP snooping and IP source bindings to match the IP address on untrusted Layer 2 networks.   
