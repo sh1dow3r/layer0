@@ -14,6 +14,8 @@ Before talking about port security we need to mention the operation process of l
 ![Port Security Topology](/_posts/img/port_security/1.2.png)
 
 ![thumper](img/port_security/1.2.png)
+<img src="https://i.imgur.com/mKlGnCql.png" width="50%" />
+
 
 
 #  **Attack Steps**
