@@ -4,32 +4,30 @@ title:  "Port Security"
 categories: Network Security
 thumpnail: "/_posts/img/port_security"
 ---
-
 # **Introduction**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 Before talking about port security we need to mention the operation process of layer 2 devices as known as “switches.” Switches operate by building tables, called context-addressable memory (CAM) tables, which the switch uses t map MAC address to their corresponding port. Depending on the version and capability of the switch, these tables can only maps a limited number of entries involving both (mac address, switch port number). One attack called CAM overflow takes advantage of this limitation to overflow the CAM table and disable the switching logic of the switch. This attack occurs when an attacker connects to a port (or multiple ports) on a switch and then crafts requests from thousands of fake random mac addresses. This makes the switch think that these are real mac address connections, with their corresponding ports, and use these to fill up the CAM table. This CAM table overflow attack turns the switch into a hub, meaning it enables the attacker to see the traffic going in/out of the switch. This could lead to a man-in-the-middle-attack. The idea of securing the port and limiting number of devices/entries helps to eliminate the attack as we will discover in the following section.  </span>
 
 #    **Constructed Topology**
 
-<img src="https://i.imgur.com/m8Z4rEi.png" />
-
-
+<img src="https://i.imgur.com/QyjmDR1.png" />
 
 #  **Attack Steps**
-After booting up our Kali box and inspecting the CAM Table on oour switch, we can see that the switch’s CAM table is configured to learn dynamically:
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  After booting up our Kali box and inspecting the CAM Table on oour switch, we can see that the switch’s CAM table is configured to learn dynamically:</span>
 
-![Port Security Topology](img/port_security/1.3.1.png)
+<img src="https://i.imgur.com/jvuAmaw.png"  />
 
-Also if we look up the count for the CAM table we will see only 4 devices as expected
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Also if we look up the count for the CAM table we will see only 4 devices as expected </span>
+<img src="  " />
 
-![Port Security Topology](img/port_security/1.3.2.png)
 
+<img src="https://i.imgur.com/7vlPYnZ.png"  />
 
-After that, I opened up our Kali machine and used the “macof” tool, which basically sends out requests from a number of random fake mac address that will be registered in the switch’s CAM table. I ran the command ‘macof –i eth0` the flag -i eth0' to specify the interface that the tool will send traffic through.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> After that, I opened up our Kali machine and used the “macof” tool, which basically sends out requests from a number of random fake mac address that will be registered in the switch’s CAM table. I ran the command ‘macof –i eth0` the flag -i eth0' to specify the interface that the tool will send traffic through.</span>
 
-![Port Security Topology](img/port_security/1.3.3.png)
+<img src="https://i.imgur.com/z5GnXLe.png" />
 
-Now, if we take a look at the MAC address table, we will see the CAM table has been overflowed from the ‘macof’ tool we started.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Now, if we take a look at the MAC address table, we will see the CAM table has been overflowed from the ‘macof’ tool we started. </span>
 
 ![Port Security Topology](img/port_security/1.3.4.png)
 
@@ -45,7 +43,7 @@ One of the most popular mitigations against CAM overflows on Cisco routers is po
 Restrict mode has the ability to make the port stay open when an attack occurs, However, it will drop any packets that violate the mac address rules set on the switch.
 For example, as the screenshot below depicts, we have only allowed 3 mac address to be learned dynamically. When a fourth mac address wants to be registered on that port. The switch will raise a violation flag and drop the packet.
 
-![Port Security Topology](img/port_security/1.4.1.1.png)
+<img src="https://i.imgur.com/K8dzulc.png" />
 
 ![Port Security Topology](img/port_security/1.4.1.2.png)
 
@@ -57,7 +55,7 @@ Now if we want to take a look at that interface to see how many mac addresses ha
 ###       **Protect Mode**
 Protect mode also allows a port to stay up during an attack similar to what we saw in restrict mode. In protect mode it drops any packets violating the rule, however, unlike restrict mode it drops the packets but it does not report back the violation to the switch monitoring the session as we saw in the restrict mode.
 
-![Port Security Topology](img/port_security/1.4.2.1.png)
+<img src="https://i.imgur.com/qGxGs7S.png"  />
 
 ![Port Security Topology](img/port_security/1.4.2.2.png)
 
@@ -80,4 +78,5 @@ As the screenshot below shows, we after running the tool again on the same port 
 [Port Security Packet Life](http://packetlife.net/blog/2010/may/3/port-security/)
 
 [Port Security Cisco Guied](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/25ew/configuration/guide/conf/port_sec.html/)
+
 
