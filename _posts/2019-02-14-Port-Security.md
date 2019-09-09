@@ -4,9 +4,8 @@ title:  "Port Security"
 categories: Network Security
 thumpnail: "/_posts/img/port_security"
 ---
-<span style="color: blue; font-family: Babas; font-size: 0.9em;"> 
-#   **Introduction**
-</span>
+
+# **Introduction**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 Before talking about port security we need to mention the operation process of layer 2 devices as known as “switches.” Switches operate by building tables, called context-addressable memory (CAM) tables, which the switch uses t map MAC address to their corresponding port. Depending on the version and capability of the switch, these tables can only maps a limited number of entries involving both (mac address, switch port number). One attack called CAM overflow takes advantage of this limitation to overflow the CAM table and disable the switching logic of the switch. This attack occurs when an attacker connects to a port (or multiple ports) on a switch and then crafts requests from thousands of fake random mac addresses. This makes the switch think that these are real mac address connections, with their corresponding ports, and use these to fill up the CAM table. This CAM table overflow attack turns the switch into a hub, meaning it enables the attacker to see the traffic going in/out of the switch. This could lead to a man-in-the-middle-attack. The idea of securing the port and limiting number of devices/entries helps to eliminate the attack as we will discover in the following section.  </span>
 
