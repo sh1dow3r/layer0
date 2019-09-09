@@ -1,5 +1,5 @@
 ---
 layout: post
-title:  "DHCP Attack & Mitigation"
+title:  "ARP Attack & Mitigation"
 categories: Network Security
 ---
