@@ -2,6 +2,7 @@
 layout: post
 title:  "Port Security"
 categories: Network Security
+thumpnail: "/_posts/img/port_security"
 ---
 
 #   **Introduction**
@@ -11,9 +12,8 @@ This attack occurs when an attacker connects to a port (or multiple ports) on a 
 
 #    **Constructed Topology**
 
-![Port Security Topology]({{url}}/_posts/img/port_security/1.2.png)
-![Thumper](https://i.imgur.com/DMCHDqF.jpg)
-
+![Port Security Topology](/_posts/img/port_security/1.2.png)
+![thumper](img/port_security/1.2.png)
 
 
 #  **Attack Steps**
