@@ -10,7 +10,7 @@ Before talking about port security we need to mention the operation process of l
 
 #    **Constructed Topology**
 
-<img src="https://i.imgur.com/QyjmDR1.png" />
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/port_security/1.2.png"/>
 
 #  **Attack Steps**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  After booting up our Kali box and inspecting the CAM Table on oour switch, we can see that the switch’s CAM table is configured to learn dynamically:</span>
@@ -32,43 +32,42 @@ Before talking about port security we need to mention the operation process of l
 ![Port Security Topology](img/port_security/1.3.4.png)
 
 
-Moreover, if we take a look at the count we will see that no more space available.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Moreover, if we take a look at the count we will see that no more space available.</span>
 
 ![Port Security Topology](img/port_security/1.3.5.png)
 
 #    **Mitigation the Attack**
-One of the most popular mitigations against CAM overflows on Cisco routers is port-security. Port-security has three modes which we will talk about the following sections.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> One of the most popular mitigations against CAM overflows on Cisco routers is port-security. Port-security has three modes which we will talk about the following sections. </span>
 
 ###          **Restrict Mode**
-Restrict mode has the ability to make the port stay open when an attack occurs, However, it will drop any packets that violate the mac address rules set on the switch.
-For example, as the screenshot below depicts, we have only allowed 3 mac address to be learned dynamically. When a fourth mac address wants to be registered on that port. The switch will raise a violation flag and drop the packet.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Restrict mode has the ability to make the port stay open when an attack occurs, However, it will drop any packets that violate the mac address rules set on the switch.
+For example, as the screenshot below depicts, we have only allowed 3 mac address to be learned dynamically. When a fourth mac address wants to be registered on that port. The switch will raise a violation flag and drop the packet. </span>
 
 <img src="https://i.imgur.com/K8dzulc.png" />
 
 ![Port Security Topology](img/port_security/1.4.1.2.png)
 
-An example of the switch output when I ran the attack again is shown in screenshot above.
-Now if we want to take a look at that interface to see how many mac addresses have violated our rule. We can see that there have been 26380 violations on that port.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> An example of the switch output when I ran the attack again is shown in screenshot above.
+Now if we want to take a look at that interface to see how many mac addresses have violated our rule. We can see that there have been 26380 violations on that port. </span>
 
 ![Port Security Topology](img/port_security/1.4.1.3.png)
 
 ###       **Protect Mode**
-Protect mode also allows a port to stay up during an attack similar to what we saw in restrict mode. In protect mode it drops any packets violating the rule, however, unlike restrict mode it drops the packets but it does not report back the violation to the switch monitoring the session as we saw in the restrict mode.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Protect mode also allows a port to stay up during an attack similar to what we saw in restrict mode. In protect mode it drops any packets violating the rule, however, unlike restrict mode it drops the packets but it does not report back the violation to the switch monitoring the session as we saw in the restrict mode.</span>
 
 <img src="https://i.imgur.com/qGxGs7S.png"  />
 
 ![Port Security Topology](img/port_security/1.4.2.2.png)
 
 
-When we ran the macof tool again against the switch, and then looked at the port, we saw that there were 185823 violations on that port but no warnings of the violations were generated.
-###         **Shutdown Mode**
-Lastly, shutdown mode works as follows, when a violation occurs a notification “SNMP” message will be sent and the port will immediately shutdown.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> When we ran the macof tool again against the switch, and then looked at the port, we saw that there were 185823 violations on that port but no warnings of the violations were generated. </span>
 
-For example, we configured our switch to accept a maximum of three mac address, and when this rule is violated, it will shut down the port.
+###         **Shutdown Mode**
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Lastly, shutdown mode works as follows, when a violation occurs a notification “SNMP” message will be sent and the port will immediately shutdown.  For example, we configured our switch to accept a maximum of three mac address, and when this rule is violated, it will shut down the port. </span>
 
 ![Port Security Topology](img/port_security/1.4.3.1.png)
 
-As the screenshot below shows, we after running the tool again on the same port we can see the port is shut down because we violated the rule of a maximum of three MAC address.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> As the screenshot below shows, we after running the tool again on the same port we can see the port is shut down because we violated the rule of a maximum of three MAC address. </span>
 
 ![Port Security Topology](img/port_security/1.4.3.2.png)
 
