@@ -2,7 +2,6 @@
 layout: post
 title:  "Port Security"
 categories: Network Security
-date: 2019-04-2
 ---
 
 # **Port Security Attack & Mitigation**
