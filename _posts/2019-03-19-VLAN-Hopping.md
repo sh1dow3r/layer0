@@ -13,10 +13,6 @@ Generally, when talking about VLAN hopping there are two type of attacks, one is
 As shown in my topology I setup the first Switch to be on VLAN 1
 
 
-REPORT THIS AD
-
-REPORT THIS AD
-
 This can be done on the configuration terminal: int valn 1
 then when we enter the interface we assign it to the address: 10.10.10.1
 
