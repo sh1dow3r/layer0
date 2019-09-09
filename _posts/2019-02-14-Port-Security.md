@@ -11,12 +11,15 @@ Before talking about port security we need to mention the operation process of l
 
 #    **Constructed Topology**
 
-![Port Security Topology](/_posts/img/port_security/1.2.png)
-
-![thumper](img/port_security/1.2.png)
+<img src="https://github.com/0xalamri/layer0/blob/gh-pages/_posts/img/port_security/1.2.png" width="100%"  />
 
 
-<img src="https://i.imgur.com/mKlGnCql.png" width="50%" />
+
+<img src="https://github.com/0xalamri/layer0/blob/gh-pages/_posts/img/port_security/1.2.png" width="50%"  />
+
+
+
+<img src="https://i.imgur.com/mKlGnCql.png" width="100%" />
 
 
 
