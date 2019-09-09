@@ -12,6 +12,7 @@ This attack occurs when an attacker connects to a port (or multiple ports) on a 
 #    **Constructed Topology**
 
 ![Port Security Topology]({{url}}/_posts/img/port_security/1.2.png)
+![Thumper](https://i.imgur.com/DMCHDqF.jpg)
 
 
 
