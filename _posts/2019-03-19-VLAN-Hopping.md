@@ -33,8 +33,7 @@ The attacker now has an address of `10.10.10.3` on the first network.
 On the other hand the victim is on `VLAN 10` and has an ip address of `10.10.1` 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/6.png"/>
 
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
-Now, we go to the terminal and run the Yersinia tool.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Now, we go to the terminal and run the Yersinia tool.
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/7.png"/>
 In order to perform the double tagging attack we click on the 802.1Q header to perform the attack.
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/8.png"/>
