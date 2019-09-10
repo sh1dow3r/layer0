@@ -30,7 +30,7 @@ Now, if we take a look at port fa1/0 it will have the victim connected to it, an
 The attacker now has an address of 10.10.10.3 on the first network.  </span> 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/5.png"/>
 
-On the other hand the victim is on `VLAN 10` and has an ip address of `10.10.1` 
+On the other hand the victim is on `VLAN 10` and has an ip address of `10.10.10.1` 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/6.png"/>
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Now, we go to the terminal and run the Yersinia tool.
