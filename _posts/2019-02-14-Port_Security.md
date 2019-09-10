@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Port Security"
-categories: Network Security
-thumpnail: "/_posts/img/port_security"
+categories: Network_Security
 ---
 # **Introduction**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
