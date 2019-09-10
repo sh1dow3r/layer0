@@ -18,41 +18,54 @@ As shown in my topology I setup the first Switch to be on VLAN 1 This can be don
 
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
-In this case, the attacker is on `port fa1/0` , the trunk port is on `port fa1/1`. </span>
+In this case, the attacker is on port fa1/0 , the trunk port is on port fa1/1. </span>
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/2.png"/>
 
 
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Moreover, on `switch 2`, we gave `VLAN 2` an IP address of `10.10.11.1` and VLAN 1 an IP address on the same network as Switch 1 </span>
-
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Moreover, on switch 2, we gave `VLAN 2` an IP address of `10.10.11.1` and VLAN 1 an IP address on the same network as Switch 1 </span>
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/3.png"/>
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/4.png"/>
 
 Now, if we take a look at port fa1/0 it will have the victim connected to it, and when we look at the other port, fa1/1, it will have the trunk port on it.
-The attacker now has an address of 10.10.10.3 on the first network.  
+The attacker now has an address of `10.10.10.3` on the first network.  
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/5.png"/>
 
-On the other hand the victim is on VLAN 10 and has an ip address of 10.10.1
+On the other hand the victim is on VLAN 10 and has an ip address of `10.10.1` 
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/6.png"/>
 
 Now, we go to the terminal and run the Yersinia tool.
-
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/7.png"/>
 In order to perform the double tagging attack we click on the 802.1Q header to perform the attack.
-
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/8.png"/>
 When we perform the attack we can see the capture on the attackers machine of an ICMP packet going through the VLAN and reaching the other network.
+
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/9.png"/>
 
 Looking closely at the packet we can see the VLAN double tags, the first one on VLAN 1 and the other on VLAN 10, it is worth noting that this is only shown from the attackers box.
 
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/10.png"/>
+
 If we take a close look at the ICMP packet on the victims machine, we will see the ICMP request being received and no sign of any 802Q.1 header.
 
+<img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/11.png"/>
+
 # **Mitigation the Attack**
-There are several common best practices that network and system administration use to defend against this attack, including:
-Disabling dynamic port on non-usable ports on the switch
-Ensuring that swithcports are set to no negotiate which by default disables DTP.
-Not using VLAN 1 for inbound management traffic, and picking any other VLAN dedicated to that purpose. In other words, prune VLAN 1 from all the trunks and from all the access ports that don’t require it
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  There are several common best practices that network and system administration use to defend against this attack, including:
+- Disabling dynamic port on non-usable ports on the switch
+- Ensuring that swithcports are set to no negotiate which by default disables DTP.
+- Not using VLAN 1 for inbound management traffic, and picking any other VLAN dedicated to that purpose. In other words, prune VLAN 1 from all the trunks and from all the access ports that don’t require it </span>
 
 # **Conclusoin**
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 TODO
+</span>
 
 # **References**
+
 
 [VLAN Hopping](https://networklessons.com/cisco/ccnp-switch/vlan-hopping/)
 
 [Mitigate VLAN hopping attack](https://howdoesinternetwork.com/2012/mitigate-vlan-hopping)
 
 [Cisco Guied](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/25ew/configuration/guide/conf/port_sec.html)
+
