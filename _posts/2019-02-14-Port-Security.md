@@ -73,8 +73,9 @@ Now if we want to take a look at that interface to see how many mac addresses ha
 
 # Conclusion
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-This is 
-</span >
+As we see can see from the above experiment switchport security restricts outsiders from connecting into the enterprise networks. By configuring port
+security one can avoid outsiders from accessing the network. Although there are ways to get into the network even though port security is configured, port security is just like a fence in the border. If a nation has built a fence on its
+borders, it doesn’t mean that nobody will cross the border. Port Security just acts as first line of defense.</span >
 
 # References
 
