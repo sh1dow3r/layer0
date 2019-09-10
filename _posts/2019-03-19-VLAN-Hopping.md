@@ -13,8 +13,7 @@ categories: Network Security
 #     **Attack Steps**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 As shown in my topology I setup the first Switch to be on VLAN 1 This can be done on the configuration terminal: `int valn 1` 
-
-then when we enter the interface we assign it to the address `10.10.10.1`   </span>
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">After that when we enter the interface we assign it to the address `10.10.10.1`   </span>
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/1.png"/>
 
 
