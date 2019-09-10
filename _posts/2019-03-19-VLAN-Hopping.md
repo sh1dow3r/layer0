@@ -10,7 +10,7 @@ categories: Network Security
 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/VLAN_Topology.png"/>
 
-#     **Attack teps**
+#     **Attack Steps**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 As shown in my topology I setup the first Switch to be on VLAN 1 This can be done on the configuration terminal: `int valn 1` 
 
