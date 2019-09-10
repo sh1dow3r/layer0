@@ -55,8 +55,7 @@ The attacker now has an address of `10.10.10.3` on the first network.  </span>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 - Disabling dynamic port on non-usable ports on the switch
 - Ensuring that swithcports are set to no negotiate which by default disables DTP. </span>
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-- Not using VLAN 1 for inbound management traffic, and picking any other VLAN dedicated to that purpose. In other words, prune VLAN 1 from all the trunks and from all the access ports that don’t require it </span>
+- <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Not using VLAN 1 for inbound management traffic, and picking any other VLAN dedicated to that purpose. In other words, prune VLAN 1 from all the trunks and from all the access ports that don’t require it </span>
 
 # **Conclusoin**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
