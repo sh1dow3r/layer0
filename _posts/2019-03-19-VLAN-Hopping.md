@@ -27,7 +27,7 @@ In this case, the attacker is on port fa1/0 , the trunk port is on port fa1/1. <
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/4.png"/>
 
 Now, if we take a look at port fa1/0 it will have the victim connected to it, and when we look at the other port, fa1/1, it will have the trunk port on it.
-The attacker now has an address of `10.10.10.3` on the first network.  
+The attacker now has an address of `10.10.10.3` on the first network.  </span> 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/5.png"/>
 
 On the other hand the victim is on `VLAN 10` and has an ip address of `10.10.1` 
