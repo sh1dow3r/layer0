@@ -42,7 +42,7 @@ The attacker now has an address of `10.10.10.3` on the first network.  </span>
 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/9.png"/>
 
- <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Looking closely at the packet we can see the VLAN double tags, the first one on VLAN 1 and the other on `VLAN 10`, it is worth noting that this is only shown from the attackers box.</span>
+ <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Looking closely at the packet we can see the VLAN double tags, the first one on `VLAN 1` and the other on `VLAN 10`, it is worth noting that this is only shown from the attackers box.</span>
 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/10.png"/>
 

@@ -12,7 +12,7 @@ categories: Network_Security
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/DHCP/DHCP_Topoplogy.png"/>
 
 #   DHCP Attacks
-##           DHCP Starvation
+###           DHCP Starvation
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> DHCP Starvation is an attack wherein the attacker looks at the entire DHCP scope and tries to acquire all the available address in that scope. This attack is considered a Denial of Service attack, as other clients will not be able too receive IP addresses anymore. Over time, the adversary continues to use new MAC addresses to send renewals for all the DHCP leases.
 
 In order to perform this kind of attack we can use a tool called `yersinia.` This tool is powerful as it provides plenty of low level networking attacks. By opening up the tool using this command `yersinia -G` and click on DHCP attack as show below, we can undertake the attack. Moreover, we can see the Wireshark traffic Which shows a heavy amount of Discover packets.</span>
@@ -27,7 +27,7 @@ In order to perform this kind of attack we can use a tool called `yersinia.` Thi
 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/DHCP/3.png"/>
 
-##          DHCP Spoofing / DHCP rogue server
+###          DHCP Spoofing / DHCP rogue server
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> A DHCP rogue server attack occurs when an attacker acts as a legitimate DHCP server in which he gives out DHCP information., including: IP addresses, gateways, and DNS. To performt his attack the “ettercap” tool can be used. To start this tool use the command `ettercap -G` and click on DHCP attack. Moreover, we can see Wireshark traffic which show heavy amount of Discover packets.</span>
 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/DHCP/4.png"/>
@@ -39,7 +39,7 @@ In order to perform this kind of attack we can use a tool called `yersinia.` Thi
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  It’s worth noting that the address of our spoofed DHCP server is 10.150.100.12.</span>
 
 
-##          DHCP Attacks Mitigation
+###          DHCP Attacks Mitigation
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  Moving on to how to prevent this attack, we can say that Cisco already has a security feature that is capable of identifying trusted and untrusted host. This feature is called DHCP snooping which has the ability to validate messages from untrusted host and drop them. In addition, it can evaluate DHCP traffic from trusted and untrusted host. This feature requires an offer binding database which has information about trusted and untrusted hosts. In our example, we can see that the port FE0/5 is trusted which means the DHCP server resides on that server.</span>
 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/DHCP/6.png"/>
