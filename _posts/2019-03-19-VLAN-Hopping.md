@@ -22,7 +22,7 @@ In this case, the attacker is on port fa1/0 , the trunk port is on port fa1/1. <
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/2.png"/>
 
 
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Moreover, on switch 2, we gave `VLAN 2` an IP address of `10.10.11.1` and VLAN 1 an IP address on the same network as Switch 1 </span>
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Moreover, on switch 2, we gave `VLAN 2` an IP address of `10.10.11.1` and VLAN 1 an IP address on the same network as Switch 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/3.png"/>
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/VLAN-Hopping/4.png"/>
 
