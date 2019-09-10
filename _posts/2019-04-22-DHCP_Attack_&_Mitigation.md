@@ -14,9 +14,7 @@ categories: Network_Security
 #   DHCP Attacks
 
 ###           DHCP Starvation
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> DHCP Starvation is an attack wherein the attacker looks at the entire DHCP scope and tries to acquire all the available address in that scope. This attack is considered a Denial of Service attack, as other clients will not be able too receive IP addresses anymore. Over time, the adversary continues to use new MAC addresses to send renewals for all the DHCP leases.
-
-In order to perform this kind of attack we can use a tool called `yersinia.` This tool is powerful as it provides plenty of low level networking attacks. By opening up the tool using this command `yersinia -G` and click on DHCP attack as show below, we can undertake the attack. Moreover, we can see the Wireshark traffic Which shows a heavy amount of Discover packets.</span>
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> DHCP Starvation is an attack wherein the attacker looks at the entire DHCP scope and tries to acquire all the available address in that scope. This attack is considered a Denial of Service attack, as other clients will not be able too receive IP addresses anymore. Over time, the adversary continues to use new MAC addresses to send renewals for all the DHCP leases. In order to perform this kind of attack we can use a tool called `yersinia.` This tool is powerful as it provides plenty of low level networking attacks. By opening up the tool using this command `yersinia -G` and click on DHCP attack as show below, we can undertake the attack. Moreover, we can see the Wireshark traffic Which shows a heavy amount of Discover packets.</span>
 
 <img src="https://raw.githubusercontent.com/0xalamri/layer0/gh-pages/_posts/img/DHCP/1.png"/>
 
