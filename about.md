@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+lang: markdown
 ---
 
 # Ali Alamri
@@ -10,5 +11,5 @@ permalink: /about/
 * Assistant system administrator @RIT, 
 * Next-Hop president
 * RITSEC member, RITSEC Red-Team member, 
-* CCENT\&CCNA and PCSSA certified
+* CCENT&CCNA and PCSSA certified
 * interested in defensive/offensive security and network security 
