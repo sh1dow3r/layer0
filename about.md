@@ -12,3 +12,9 @@ permalink: /about/
 - RITSEC member, RITSEC Red-Team member, 
 - CCENT\&CCNA and PCSSA certified
 - interested in defensive/offensive security and network security 
+
+<ul>
+  <li>Computer Security student @ Rochester Institute of Technology </li>
+  <li>Assistant system administrator @RIT</li>
+  <li>Next-Hop president</li>
+</ul>
