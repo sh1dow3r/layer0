@@ -3,6 +3,4 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-
-Ali Alamri
+T3 Alamri
