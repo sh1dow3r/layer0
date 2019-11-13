@@ -2,12 +2,6 @@
 layout: about
 ---
 
-{% if page.minutes %}
-  {% assign minutes = page.minutes %}
-{% else %}
-  {% assign minutes = content | number_of_words | divided_by: 180 %}
-  {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
-{% endif %}
 
 <div class="container-fluid single">
   <div class="row">
