@@ -6,7 +6,7 @@ permalink: /about/
 
 # Ali Alamri
 
-## Computer Security student @ Rochester Institute of Technology
+#### Computer Security student @ Rochester Institute of Technology
 * Assistant system administrator @ RIT
 * Next-Hop president
 * RITSEC member, RITSEC Red-Team member
