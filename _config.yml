@@ -1,19 +1,19 @@
 # Site settings
 title: "Layer Zero"
-email: 0xalamri@gmail.com
+email: tigerpwn@gmail.com
 baseurl: ""
 url: "http://layer0.xyz"
 title_description: "Network security from another perspective"
 title_image: "https://thumbs.dreamstime.com/z/manzana-del-ping%C3%BCino-de-la-historieta-y-ejemplo-de-las-ventanas-29538663.jpg"
 google_analytics: "UA-20365477-4"
 disqus_account: cartenoire
-github_repository: https://github.com/0xalamri/layer0
+github_repository: https://github.com/tigerpwn/layer0
 addthis_id: ra-513c6fa83da6ec67 
 post_limit: 10
 
 # Social usernames/URLs
-twitter_username: 0xalamri
-github_username:  0xalamri
+twitter_username: tigerpwn
+github_username:  tigerpwn
 linkedin_link: https://www.linkedin.com/in/ali-alamri/
 
 
