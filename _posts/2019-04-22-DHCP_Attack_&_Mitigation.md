@@ -55,7 +55,12 @@ So, only the packet that is formed by the legitimate DHCP server on the trust po
 
 # **Conclusoin**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
-TODO
+From this experiment in DHCP Snooping Attack, it’s obvious that this
+attack leads to compromising the hall connection between two ends which is
+known as “Man in Middle Attack”. And “DHCP Snooping” and “trusted ports”
+features in Cisco switches have the ability to prevent illegitimate servers to
+acting as DHCP server. Thus, DHCP Snooping is acting as a firewall for
+preventing this attack.
 </span>
 
 # **References**
