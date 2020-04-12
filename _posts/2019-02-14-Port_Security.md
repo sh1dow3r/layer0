@@ -81,5 +81,3 @@ borders, it doesn’t mean that nobody will cross the border. Port Security just
 [Port Security Packet Life](http://packetlife.net/blog/2010/may/3/port-security/)
 
 [Port Security Cisco Guied](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/25ew/configuration/guide/conf/port_sec.html/)
-
-
