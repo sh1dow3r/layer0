@@ -58,7 +58,11 @@ The attacker now has an address of `10.10.10.3` on the first network.  </span>
 
 # **Conclusoin**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
-TODO
+This kind of attack becomes a risk due it’s capabilities to hopping VLANs, since
+the attacker can deliver frames to different VLAN without even using inter-
+VLAN routing. Nowadays, Cisco realized this vulnerability and they prevented
+it in newer versions such “Cisco IOS 12.2” which it configured to prevent
+double VLAN tagging.
 </span>
 
 # **References**
