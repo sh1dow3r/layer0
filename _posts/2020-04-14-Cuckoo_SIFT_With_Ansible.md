@@ -8,31 +8,31 @@ categories: Malware_Forensics
 Recently, I have been involved in a lot of projects related to DevOps and building secure infrastructure as Code (IAC) which I will be blogging about once I finish them. In this blog I'll go over basic tools I have used to accomplish this project.  
 </span>
 
-## **Background**
+## **Background** <br/>  
 
-#### Cuckoo Sandbox Project
+### Cuckoo Sandbox Project
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 Cuckoo Sandbox project is an open-sourced tool that automates dynamic malware analysis. The project was built using python language which makes the installment process easier to install across all platform. Cuckoo also supports malware analysis on Windows, OSX, Linux, and Android. Cuckoo, also, have a well-defined structure that makes it easy to customize. This feature has allowed analysts across the world to add custom modules and plugins that capture certain artifacts to result the best outcome. Lastly, Cuckoo have a great community support for the project which beyond the scope of this blog but could be found on this github repo. https://github.com/cuckoosandbox/community
 </span>
 
-#### SIFT Workstation
+### SIFT Workstation
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 SIFT Workstation is a powerful forensics framework that contains most of the open-source tools used by industry-level analysts. SIFT workstation comes in the form of an appliance and could be ran as a virtual machine. Reducing the overhead of installing and configuring each tool is one of its greatest advantage.
 </span>
 
-#### Ansible
+### Ansible
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 Ansible is an open-source software and powerful tools that could be used for various aspects. Ansible mainly know for four overall functionality
+ <li> Application Deployment (Like Fabic)  </li> 
+ <li> Provisioning (Like Cobbler or JuJu) </li> 
+ <li> Configuration Management (Like Chef or Puppet) </li> 
+ <li> Multi-tier Orchestrion (Like Chef-Metal) </li> 
+ 
  </span>  
 
-    * Application Deployment (Like Fabic)
-    * Provisioning (Like Cobbler or JuJu)
-    * Configuration Management (Like Chef or Puppet)
-    * Multi-tier Orchestrion (Like Chef-Metal)
-
-#### Vagrant
+### Vagrant
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 Vagrant is a provisioning platform from hashicorp that is used to spins up and maintain virtual machines in different hypervisor providers such as AWS, VMware and virtualbox.
