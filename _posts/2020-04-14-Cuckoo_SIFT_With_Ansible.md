@@ -89,6 +89,8 @@ As you can see, in the previous screenshot the ansible playbook is completed and
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 Now that we have deployed the virtual machine, let's starts the the Cuckoo deployment. Starting by adding the required variables in the `vars.yml`. After you have inputted the neccessry vars, you can run the Cuckoo ansible playbook as follows:  
 `ansible-playbook SIFT-Cuckoo-Sandbox.yml -i inventory.ini`
+After issuing the command we wait for a few minutes for the whole setup to be done then we hop onto the workstation to confirm the installment as seen in the screenshot below
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/cuckoo_after_installing.png"/>
 
 # Conclusion
 
