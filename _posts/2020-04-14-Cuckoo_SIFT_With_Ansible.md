@@ -60,18 +60,16 @@ Before diving into the project let's take a quick look at the structure of the c
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 As you can here, we have a bunch of files, starting from the top, we have:  
-`SIFT-Cuckoo-Playbook.yml`: which contains the overall tasks(roles) related to Cuckoo project setup.
-`SIFT-Deploy.yml`: which contains the vCenter deplyment of SIFT workstation.
+`SIFT-Cuckoo-Playbook.yml`: which contains the overall tasks(roles) related to Cuckoo project setup.  
+`SIFT-Deploy.yml`: which contains the vCenter deplyment of SIFT workstation.  
 `inventory.ini`: contains the variables used to communicate with the other  node such IP, user and password of the client machine  
-`requirements.sh`: has all the dependencies used by this project.
+`requirements.sh`: has all the dependencies used by this project.  
 `roles`: has the different subtask of the project  
 `roles\SIFT-Cuckoo-Sandbox\*`: subtask to install and configure Cuckoo sandbox project  
-`vars.yml`: a centralized place to hold all the variables of the project.
-</span>
-
-
-`git clone https://github.com/sh1dow3r/SandBoxer`
-`cd SandBoxer`
+`vars.yml`: a centralized place to hold all the variables of the project.  
+To install the project, nvaigete th efolling github repo and cline i.  
+`git clone https://github.com/sh1dow3r/SandBoxer`  
+`cd SandBoxer`  
 `./requirements.sh` to install all the dependencies  
 Edit `vars.yml` accordingly  
 
