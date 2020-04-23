@@ -69,18 +69,23 @@ Edit `vars.yml` accordingly  <br/>
 The rest will follows in the next section.
 </span>
 
-#  **How does it work?**
+##  **How does it work?**
+### SIFT Workstation Deployment
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm.  
-Here is a quick example of what my file looks<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/vars_content.png"/>
-`vars.yml` file contains a lot of variables related to the vCenter API. After making sure, you have all the variables set.  Additionally, make sure you have the SIFT ova file in the correct path. Now we will run the the palybook `SIFT-Deploy.yml` to deploy SIFT workstation.  
-src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/SIFT_Deploment_vCenter.png"/>
-src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Ansible_output_after_vcenter_deployment.png"/>
+Here is a quick example of what my file looks
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/vars_content.png"/>
+`vars.yml` file contains a lot of variables related to the vCenter API. After making sure, you have all the variables set.  Additionally, make sure you have the SIFT ova file in the correct path. Now we will run the the playbook `SIFT-Deploy.yml` to deploy SIFT workstation using the follwoing command.
+`ansible-playbook SIFT-Deploy.yml`  
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/SIFT_Deploment_vCenter.png"/>
 
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Ansible_output_after_vcenter_deployment.png"/>
+As you can see, in the previous screenshot the ansible playbook is completed and the vm is deployed on the vCenter server. (Note: you may discard the warnings while running the playbook).
 
-</span>
+### Cuckoo Project Deployment
 
-
+Now that we have deployed the virtual machine, let's starts the the Cuckoo deployment. Starting by adding the required variables in the `vars.yml` 
 # Conclusion
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 Buliding Malware analysis environment mannually requires time and resource and can bee overwhlmening to setup. In this project, I proposed a solution of how easlily to write automated process
