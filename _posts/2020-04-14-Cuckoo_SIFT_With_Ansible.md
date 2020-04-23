@@ -3,8 +3,8 @@ layout: post
 title:  "Virtualized Malware Analysis Environment"
 categories: Malware_Forensics
 ---
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">
 
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.2em;">
 Recently, I have been involved in a lot of projects related to DevOps and building secure infrastructure as Code (IAC) which I will be blogging about once I finish them. In this blog I'll go over basic tools I have used to accomplish this project.  
 </span>
 
