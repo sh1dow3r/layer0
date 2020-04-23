@@ -87,7 +87,8 @@ As you can see, in the previous screenshot the ansible playbook is completed and
 ### Cuckoo Project Deployment
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-Now that we have deployed the virtual machine, let's starts the the Cuckoo deployment. Starting by adding the required variables in the `vars.yml` 
+Now that we have deployed the virtual machine, let's starts the the Cuckoo deployment. Starting by adding the required variables in the `vars.yml`. After you have inputted the neccessry vars, you can run the Cuckoo ansible playbook as follows:  
+`ansible-playbook SIFT-Cuckoo-Sandbox.yml -i inventory.ini`
 
 # Conclusion
 
