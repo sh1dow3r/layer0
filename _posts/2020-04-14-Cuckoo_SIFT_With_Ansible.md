@@ -29,7 +29,7 @@ Ansible is an open-source software and powerful tools that could be used for var
  <li> Provisioning (Like Cobbler or JuJu) </li> 
  <li> Configuration Management (Like Chef or Puppet) </li> 
  <li> Multi-tier Orchestrion (Like Chef-Metal) </li> 
- 
+
  </span>  
 
 ### Vagrant
@@ -48,14 +48,17 @@ Configuring and setting up different services manually is both time-consuming an
 
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Virtualized_Malware_Analysis_Environment.png"/>
 
-As depicted in the topology we have a computer that communicated with VMware vCenter to deploy the SIFT workstation. After that, we configure the workstation with Cuckoo project using Ansible. Lastly, we provision VirtualBox using vagrant to spawn up a virtual machine to be used for malware analysis
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+As depicted in the topology we have a computer that communicated with VMware vCenter to deploy the SIFT workstation. After that, we configure the workstation with Cuckoo project using Ansible. Lastly, we provision VirtualBox using vagrant to spawn up a virtual machine to be used for malware analysis.
+</span>
 
 #  **Install/Setup**
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-Before diving into the project let's take a quick look at the structure of the code:   
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Sandboxer_Dir_Structure.png"/>    
+Before diving into the project let's take a quick look at the structure of the code:   </span>
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Sandboxer_Dir_Structure.png"/>
 
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 As you can here, we have a bunch of files, starting from the top, we have:  
 `SIFT-Cuckoo-Playbook.yml`: which contains the overall tasks(roles) related to Cuckoo project setup.
 `SIFT-Deploy.yml`: which contains the vCenter deplyment of SIFT workstation.
@@ -64,17 +67,20 @@ As you can here, we have a bunch of files, starting from the top, we have:
 `roles`: has the different subtask of the project  
 `roles\SIFT-Cuckoo-Sandbox\*`: subtask to install and configure Cuckoo sandbox project  
 `vars.yml`: a centralized place to hold all the variables of the project.
+</span>
 
 
 `git clone https://github.com/sh1dow3r/SandBoxer`
 `cd SandBoxer`
 `./requirements.sh` to install all the dependencies  
 Edit `vars.yml` accordingly  
+
+The rest will follows in the next section.
 </span>
 
 #  **How does it work?**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-After we setup the project, let 
+After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm. 
 
 </span>
 
