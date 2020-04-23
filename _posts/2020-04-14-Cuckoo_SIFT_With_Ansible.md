@@ -20,13 +20,11 @@ SIFT Workstation is a powerful forensics framework that contains most of the ope
 
 ### Ansible
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-Ansible is an open-source software and powerful tools that could be used for various aspects. Ansible mainly know for four overall functionality  
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+Ansible is an open-source software and powerful tools that could be used for various aspects. Ansible mainly know for four overall functionality
  <li> Application Deployment (Like Fabic)  </li> 
  <li> Provisioning (Like Cobbler or JuJu) </li> 
  <li> Configuration Management (Like Chef or Puppet) </li> 
- <li> Multi-tier Orchestrion (Like Chef-Metal) </li> 
- </span>  
+ <li> Multi-tier Orchestrion (Like Chef-Metal) </li>  
 
 ### Vagrant
 
@@ -75,7 +73,7 @@ The rest will follows in the next section.
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm. 
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/vars_content.png"/>
-
+`vars.yml` file contains a lot of varibles pertenatin the vCenter 
 
 </span>
 
