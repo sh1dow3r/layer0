@@ -27,7 +27,7 @@ SIFT Workstation is a powerful forensics framework that contains most of the ope
 Ansible is an open-source software and powerful tools that could be used for various aspects. Ansible mainly know for four overall functionality
  </span>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
-* Application Deployment (Like Fabic)   
+ * Application Deployment (Like Fabic)  in  
 </span>
 * Provisioning (Like Cobbler or JuJu)
 * Configuration Management (Like Chef or Puppet)
