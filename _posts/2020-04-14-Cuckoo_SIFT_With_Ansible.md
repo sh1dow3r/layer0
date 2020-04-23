@@ -4,10 +4,6 @@ title:  "Virtualized Malware Analysis Environment"
 categories: Malware_Forensics
 ---
 
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-Recently, I have been involved in a lot of projects related to DevOps and building secure infrastructure as Code (IAC) which I will be blogging about once I finish them. In this blog I'll go over basic tools I have used to accomplish this project.  
-</span>
-
 ## **Background** <br/>  
 
 ### Cuckoo Sandbox Project
@@ -24,12 +20,12 @@ SIFT Workstation is a powerful forensics framework that contains most of the ope
 
 ### Ansible
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-Ansible is an open-source software and powerful tools that could be used for various aspects. Ansible mainly know for four overall functionality
+Ansible is an open-source software and powerful tools that could be used for various aspects. Ansible mainly know for four overall functionality  
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
  <li> Application Deployment (Like Fabic)  </li> 
  <li> Provisioning (Like Cobbler or JuJu) </li> 
  <li> Configuration Management (Like Chef or Puppet) </li> 
  <li> Multi-tier Orchestrion (Like Chef-Metal) </li> 
-
  </span>  
 
 ### Vagrant
@@ -61,24 +57,25 @@ Before diving into the project let's take a quick look at the structure of the c
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 As you can here, we have a bunch of files, starting from the top, we have:  
 `SIFT-Cuckoo-Playbook.yml`: which contains the overall tasks(roles) related to Cuckoo project setup.  
-`SIFT-Deploy.yml`: which contains the vCenter deplyment of SIFT workstation.  
-`inventory.ini`: contains the variables used to communicate with the other  node such IP, user and password of the client machine  
+`SIFT-Deploy.yml`: which contains the vCenter deployment of SIFT workstation.  
+`inventory.ini`: contains the variables used to communicate with the other node such IP, user and password of the client machine  
 `requirements.sh`: has all the dependencies used by this project.  
 `roles`: has the different subtask of the project  
 `roles\SIFT-Cuckoo-Sandbox\*`: subtask to install and configure Cuckoo sandbox project  
 `vars.yml`: a centralized place to hold all the variables of the project.  
-To install the project, nvaigete th efolling github repo and cline i.  
+To install the project, nvaigete th efolling github repo and clone it.  
 `git clone https://github.com/sh1dow3r/SandBoxer`  
 `cd SandBoxer`  
 `./requirements.sh` to install all the dependencies  
-Edit `vars.yml` accordingly  
-
+Edit `vars.yml` accordingly  <br/>  
 The rest will follows in the next section.
 </span>
 
 #  **How does it work?**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm. 
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/vars_content.png"/>
+
 
 </span>
 
