@@ -70,7 +70,7 @@ The rest will follows in the next section.
 </span>
 
 ##  **How does it work?**
-### SIFT Workstation Deployment
+### - SIFT Workstation Deployment
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm.  
@@ -84,7 +84,7 @@ Here is a quick example of what my file looks
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 As you can see, in the previous screenshot the ansible playbook is completed and the vm is deployed on the vCenter server. (Note: you may discard the warnings while running the playbook).
 
-### Cuckoo Project Deployment
+### - Cuckoo Project Deployment
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 Now that we have deployed the virtual machine, let's starts the the Cuckoo deployment. Starting by adding the required variables in the `vars.yml`. After you have inputted the necessary vars, you can run the Cuckoo ansible playbook as follows:  
