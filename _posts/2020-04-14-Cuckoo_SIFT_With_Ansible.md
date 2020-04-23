@@ -71,9 +71,12 @@ The rest will follows in the next section.
 
 #  **How does it work?**
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm. 
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/vars_content.png"/>
-`vars.yml` file contains a lot of varibles pertenatin the vCenter 
+After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm.  
+Here is a quick example of what my file looks<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/vars_content.png"/>
+`vars.yml` file contains a lot of variables related to the vCenter API. After making sure, you have all the variables set.  Additionally, make sure you have the SIFT ova file in the correct path. Now we will run the the palybook `SIFT-Deploy.yml` to deploy SIFT workstation.  
+src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/SIFT_Deploment_vCenter.png"/>
+src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Ansible_output_after_vcenter_deployment.png"/>
+
 
 </span>
 
