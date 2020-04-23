@@ -8,7 +8,7 @@ categories: Malware_Forensics
 Recently, I have been involved in a lot of projects related to DevOps and building secure infrastructure as Code (IAC) which I will be blogging about once I finish them. In this blog I'll go over basic tools I have used to accomplish this project.  
 </span>
 
-## **Background** <br/>  
+## **Background**
 
 #### Cuckoo Sandbox Project
 
@@ -25,13 +25,12 @@ SIFT Workstation is a powerful forensics framework that contains most of the ope
 #### Ansible
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 Ansible is an open-source software and powerful tools that could be used for various aspects. Ansible mainly know for four overall functionality
- </span>
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+ </span>  
+
     * Application Deployment (Like Fabic)
     * Provisioning (Like Cobbler or JuJu)
     * Configuration Management (Like Chef or Puppet)
     * Multi-tier Orchestrion (Like Chef-Metal)
- </span>
 
 #### Vagrant
 
