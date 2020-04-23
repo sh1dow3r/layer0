@@ -81,14 +81,18 @@ Here is a quick example of what my file looks
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/SIFT_Deploment_vCenter.png"/>
 
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Ansible_output_after_vcenter_deployment.png"/>
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 As you can see, in the previous screenshot the ansible playbook is completed and the vm is deployed on the vCenter server. (Note: you may discard the warnings while running the playbook).
 
 ### Cuckoo Project Deployment
 
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 Now that we have deployed the virtual machine, let's starts the the Cuckoo deployment. Starting by adding the required variables in the `vars.yml` 
+
 # Conclusion
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-Buliding Malware analysis environment mannually requires time and resource and can bee overwhlmening to setup. In this project, I proposed a solution of how easlily to write automated process
+Building Malware analysis environment manually requires time and resource and can bee overwhelming to setup. In this project, I proposed a solution of how easily to write automated process
 </span >
 
 # References
