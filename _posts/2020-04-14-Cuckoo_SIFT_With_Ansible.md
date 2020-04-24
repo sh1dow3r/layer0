@@ -106,8 +106,8 @@ After windows10 is up and running make sure it's snapshotted and there you go, y
 ## Conclusion
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-Building Malware analysis environment manually requires time and resource and can bee overwhelming to setup. In this project, I proposed a solution of how easily to write automated process
-</span >
+Building Malware analysis environment manually requires time, resource and can bee overwhelming to setup. In this project, I proposed a solution of an automated process
+to setup you're own malware environment using DevOps tools like Ansible and Vagrant. </span >
 
 # References
 
