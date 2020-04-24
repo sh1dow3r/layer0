@@ -60,19 +60,18 @@ As you can here, we have a bunch of files, starting from the top, we have:
 `requirements.sh`: has all the dependencies used by this project.  
 `roles`: has the different subtask of the project  
 `roles\SIFT-Cuckoo-Sandbox\*`: subtask to install and configure Cuckoo sandbox project  
-`vars.yml`: a centralized place to hold all the variables of the project.  
+`vars.yml`: a centralized place to hold all the variables of the project.  <br/> 
 To install the project, nvaigete th efolling github repo and clone it.  
 `git clone https://github.com/sh1dow3r/SandBoxer`  
 `cd SandBoxer`  
 `./requirements.sh` to install all the dependencies  
-Edit `vars.yml` accordingly  <br/>  
+Edit `vars.yml` accordingly  
 The rest will follows in the next section.
 </span>
 
 ##  **How does it work?**
 ### - SIFT Workstation Deployment
-
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 After we install the dependencies for the project we start with the first step, which is deploying our workstation to vCenter. To do so, we will edit the `vars.yml` section to  have the required information we need to deploy the vm.  
 Here is a quick example of what my file looks
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/vars_content.png"/>
