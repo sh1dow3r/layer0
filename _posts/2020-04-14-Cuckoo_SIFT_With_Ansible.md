@@ -97,8 +97,11 @@ After issuing the command we wait for a few minutes for the whole setup to be do
 After we confirmed all the configuration is done, we'll navigate to `home/cuckoo/vagrant_files` which has the windows10 virtual machine we're going to use for malware analysis. There should be a bash script called `vagrant_script.sh` that is going to pull a windows 10 image and set it up with Virtualbox then take a stable snapshot.
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/After_vagrant.png"/> 
 
-After that, you have your Cuckoo Sandbox up and ruining! :)
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+After windows10 is up and running make sure it's snapshotted and there you go, you have your Cuckoo Sandbox up and ruining! :
 </span>
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Cuckoo_up_and_running.png"/> 
+
 
 ## Conclusion
 
