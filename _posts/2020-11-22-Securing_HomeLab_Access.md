@@ -63,7 +63,7 @@ Now that we configure Pfsenes to redirect the traffic coming on port 80 and port
 </span>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 The Firewall rules would look like something like this:
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/FirewallRule.png.png"/> 
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/FirewallRule.png"/> 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 The NAT rules would look like something like this:
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/NATRule.png"/> 
@@ -72,14 +72,13 @@ The NAT rules would look like something like this:
 ## Conclusion
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-Building Malware analysis environment manually requires time, resource and can bee overwhelming to setup. In this project, I proposed a solution of an automated process
-to setup you're own malware environment using DevOps tools like Ansible and Vagrant. </span >
+ Cloudflare and Traefik </span >
 
 # References
 
 
-[Ansible docs](https://docs.ansible.com/ansible/latest/modules/lineinfile_module.html)
+[Cloudflare docs](https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard)
 
-[Vagrant-Virtualbox provider](https://www.vagrantup.com/docs/virtualbox/)
+[Cloudflare Settings for Traefik Docker](smarthomebeginner.com/cloudflare-settings-for-traefik-docker/)
 
-[Cuckoo Ansible example](https://github.com/fyhertz/ansible-role-cuckoo)
+[Evan's Github](https://github.com/egallis31/traefik-elk-grafana)
