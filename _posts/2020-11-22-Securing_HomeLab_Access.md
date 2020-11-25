@@ -18,7 +18,7 @@ For this post, you will need two things:
     - Registered domain name through Cloudflare.
 </span>
 
-#  ** Terminology **
+#  **Terminology**
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 Before diving into the project, let's take a define some terms to establish ground-level of knowledge:   </span>
