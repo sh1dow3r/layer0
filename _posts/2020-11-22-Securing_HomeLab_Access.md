@@ -42,24 +42,18 @@ Before diving into the project, let's take a define some terms to establish grou
 ### - VM setup
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 After we install the dependencies namely docker and docker-compose in the VM.
-Open the terminal in you VM and clone this repo:
-
-`root$ git clone https://github.com/sh1dow3r/Traefik_CF`
-
-`root$ cd Trafik_CF` 
-
+Open the terminal in you VM and clone this repo:  <br />
+`root$ git clone https://github.com/sh1dow3r/Traefik_CF`  <br />
+`root$ cd Trafik_CF`  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-In this directory you will need to apply two task
-
+In this directory you will need to apply two task  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-1- Generate a certificate for Traefik microserviec and place it in certs directory, which can be easily done with this command
-`mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`
-
+1- Generate a certificate for Traefik microserviec and place it in certs directory, which can be easily done with this command  <br />
+`mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dashboard  [Cloudflare dashboard]( https://dash.cloudflare.com/)
-
+2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dashboard  [Cloudflare dashboard]( https://dash.cloudflare.com/)  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-As you can see, 
+As you can see, <br />
 
 ### - Pfsense Setup
 
