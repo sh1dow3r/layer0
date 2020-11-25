@@ -44,7 +44,7 @@ Before diving into the project, let's take a define some terms to establish grou
 After we install the dependencies namely docker and docker-compose in the VM.
 Open the terminal in you VM and clone this repo:  <br />
 `root$ git clone https://github.com/sh1dow3r/Traefik_CF`  <br />
-`root$ cd Trafik_CF`  <br />
+`root$ cd Trafik_CF`
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 In this directory you will need to apply two task  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
