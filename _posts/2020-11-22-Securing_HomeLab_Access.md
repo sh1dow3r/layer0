@@ -11,13 +11,13 @@ categories: Homelab
 If you have wonder if there is a way to access your web console of your homelab hypervisor externally and restrict access to it, this blog is what you are seeking. In this blog, I will show a use case where you can use an open-source reverse proxy alongside Cloudflare "awesome" dashboard functionality.</span>
 
 ## What you will need?
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
 For this post, you will need three things: <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
 1- Router that has public IP.  <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
 2- Virtual machine that has docker installed and has access to the internet.  <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
 3- Registered domain name through Cloudflare. <br />
 
 #  **Terminology**
@@ -30,9 +30,9 @@ Before diving into the project, let's take a define some terms to establish grou
 <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 1- DNS: To define our DNS records <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 2- SSL/TLS: To modify TLS negotiations with the proxy and other parties. <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.0em;"> 3- Access: Protect internal resources by requiring authentication <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.0em;"> To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page.
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> 3- Access: Protect internal resources by requiring authentication <br />
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">  
 `Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used for microservices.
 </span>
 
@@ -44,12 +44,12 @@ Open the terminal in you VM and clone this repo:  <br />
 `root$ git clone https://github.com/sh1dow3r/Traefik_CF`  <br />
 `root$ cd Trafik_CF`
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-In this directory you will need to apply two task  <br />
+Inside the repo you will need to apply two task  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 1- Generate a certificate for Traefik microserviec and place it in certs directory, which can be easily done with this command  <br />
 `mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dashboard  [Cloudflare dashboard]( https://dash.cloudflare.com/)  <br />
+2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dashboard [Cloudflare dashboard]( https://dash.cloudflare.com/)  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 As you can see, <br />
 
