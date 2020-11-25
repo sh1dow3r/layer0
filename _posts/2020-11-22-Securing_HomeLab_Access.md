@@ -50,10 +50,11 @@ Inside the repo you will need to apply two task
 1- Generate a certificate for Traefik microserviec and place it in certs directory, which can be easily done with this command  <br />
 `mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dashboard [Cloudflare dashboard]( https://dash.cloudflare.com/)  <br />
+2- Make note of your Global API KEY and email from your cloudflare account. This information can be found in your under your profile [Cloudflare dashboard]( https://dash.cloudflare.com/)  <br />
+After you have taking the global API Key, add it to the dockerfile in Traefik folder, and add your email as well as shown in the screenshot below:
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/CF_API.png"/>
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-As you can see, <br />
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_Dockerfile.png"/> 
+
 
 ### - Pfsense Setup
 
