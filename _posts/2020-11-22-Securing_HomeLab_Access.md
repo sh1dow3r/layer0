@@ -13,11 +13,12 @@ If you have wonder if there is a way to access your web console of your homelab 
 ## What you will need?
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 For this post, you will need three things:
-
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 1- Router that has public IP.
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 2- Virtual machine that has docker installed and has access to the internet.
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 3- Registered domain name through Cloudflare.
 </span>
