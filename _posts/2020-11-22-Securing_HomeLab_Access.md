@@ -11,13 +11,13 @@ categories: Homelab
 If you have wonder if there is a way to access your web console of your homelab hypervisor externally and restrict access to it, this blog is what you are seeking. In this blog, I will show a use case where you can use an open-source reverse proxy alongside Cloudflare "awesome" dashboard functionality.</span>
 
 ## What you will need?
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 For this post, you will need three things: <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 1- Router that has public IP.  <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 2- Virtual machine that has docker installed and has access to the internet.  <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 3- Registered domain name through Cloudflare. <br />
 
 #  **Terminology**
@@ -38,6 +38,9 @@ Before diving into the project, let's take a define some terms to establish grou
 </span>
 
 ##  **Install/Setup**
+### - Cloudflare Setup
+
+
 ### - VM setup
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 After we install the dependencies namely docker and docker-compose in the VM.
@@ -67,6 +70,7 @@ The Firewall rules would look like something like this:
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 The NAT rules would look like something like this:
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/NATRule.png"/> 
+
 
 
 ## Conclusion
