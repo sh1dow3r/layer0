@@ -33,6 +33,7 @@ Before diving into the project, let's take a define some terms to establish grou
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> 3- Access: Protect internal resources by requiring authentication <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page.
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">  
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik.png"/>
 `Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used for microservices.
 </span>
 
@@ -50,6 +51,7 @@ Inside the repo you will need to apply two task  <br />
 `mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dashboard [Cloudflare dashboard]( https://dash.cloudflare.com/)  <br />
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/CF_API.png"/>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 As you can see, <br />
 
