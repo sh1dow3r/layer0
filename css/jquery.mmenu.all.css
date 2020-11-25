@@ -84,7 +84,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      color: #f2cf4a;
+      color: inherit;
       line-height: 20px;
       display: block;
       padding: 10px 10px 10px 20px;
