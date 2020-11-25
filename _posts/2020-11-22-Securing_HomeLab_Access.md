@@ -12,18 +12,18 @@ If you have wonder if there is a way to access your web console of your homelab 
 
 ## What you will need?
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-For this post, you will need three things: </br>
+For this post, you will need three things: <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-1- Router that has public IP.  </br>
+1- Router that has public IP.  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-2- Virtual machine that has docker installed and has access to the internet.  </br>
+2- Virtual machine that has docker installed and has access to the internet.  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-3- Registered domain name through Cloudflare. </br>
+3- Registered domain name through Cloudflare. <br />
 
 #  **Terminology**
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-Before diving into the project, let's take a define some terms to establish ground-level of knowledge:   </span>
+Before diving into the project, let's take a define some terms to establish ground-level of knowledge:
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/CF_dashboard.png"/>
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
