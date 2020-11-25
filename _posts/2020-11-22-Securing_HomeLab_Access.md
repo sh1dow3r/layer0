@@ -33,8 +33,8 @@ Before diving into the project, let's take a define some terms to establish grou
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> 3- Access: Protect internal resources by requiring authentication <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page.
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">  
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik.png"/>
 `Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used for microservices.
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik.png"/>
 </span>
 
 ##  **Install/Setup**
