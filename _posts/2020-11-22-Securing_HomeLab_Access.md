@@ -32,7 +32,9 @@ Before diving into the project, let's take a define some terms to establish grou
 - Access
 </span>
 
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 `Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used for microservices.
+</span>
 
 
 ##  **Install/Setup**
