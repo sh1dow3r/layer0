@@ -45,7 +45,7 @@ Open the terminal in you VM and clone this repo:  <br />
 `root$ git clone https://github.com/sh1dow3r/Traefik_CF`  <br />
 `root$ cd Trafik_CF`
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-Inside the repo you will need to apply two task  <br />
+Inside the repo you will need to apply two task
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 1- Generate a certificate for Traefik microserviec and place it in certs directory, which can be easily done with this command  <br />
 `mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`  <br />
