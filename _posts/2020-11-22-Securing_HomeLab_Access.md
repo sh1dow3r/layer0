@@ -50,9 +50,6 @@ In this dicrtory you will need to apply two task
 `mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`
 2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dahshboard  [Cloudflare dahshboard]( https://dash.cloudflare.com/)
 
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/SIFT_Deploment_vCenter.png"/>
-
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Ansible_output_after_vcenter_deployment.png"/>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 As you can see, 
 
