@@ -33,12 +33,16 @@ Before diving into the project, let's take a define some terms to establish grou
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 `Cloudflare Dashboard`: Cloudflare dashboard is where you define the DNS records and modify them. Since we're on the subject, the dashboard so many many AMAZING services that I can't even begin to fathom what you could accomplish with them. For the time being, we will stick with the basics ones such as:
 </span>
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 - DNS: To define our DNS records
+  
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 - SSL/TLS: To modify TLS negotiations with the proxy and other parties.
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 - Access: Protect internal resources by requiring authentication
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page.
 </span>
