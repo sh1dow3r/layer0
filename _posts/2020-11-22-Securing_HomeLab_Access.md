@@ -31,8 +31,8 @@ Before diving into the project, let's take a define some terms to establish grou
 <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 1- DNS: To define our DNS records <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 2- SSL/TLS: To modify TLS negotiations with the proxy and other parties. <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 3- Access: Protect internal resources by requiring authentication <br />
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page. <br />
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.0em;"> 3- Access: Protect internal resources by requiring authentication <br />
+<span style="color: #f2cf4a; font-family: Babas; font-size: 1.0em;"> To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page. <br />
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 `Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used for microservices.
