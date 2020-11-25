@@ -26,11 +26,11 @@ Before diving into the project, let's take a define some terms to establish grou
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 `Cloudflare Dashboard`: Cloudflare dashboard is where you define the DNS records and modify them. Since we're on the subject, the dashboard so many many AMAZING services that I can't even begin to fathom what you could accomplish with them. For the time being, we will stick with the basics ones such as:
-</span>
 
 - DNS: To define our DNS records
 - SSL/TLS: To modify TLS negotiations with the proxy and other parties.
 - Access
+</span>
 
 `Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used for microservices.
 
@@ -41,7 +41,12 @@ Before diving into the project, let's take a define some terms to establish grou
 After we install the dependencies such docker and docker-compose in the VM.
 
 Open the terminal in you VM and clone this repo:
-git   
+`root$ git clone https://github.com/sh1dow3r/Traefik_CF`
+`root$ cd Trafik_CF` 
+In this dicrtory you will need to apply two task
+1- Generate a certifacate for Traefik microserviec and place it in certs dircotry, which can be easliy done with this command
+`mkdir -p certs; openssl req -x509 -newkey rsa:4096 -nodes -out certs/cert.crt -keyout certs/cert.key -days 365`
+2- Add you API_KEY and email from your cloudflare account. This information can be found in your Cloudflare dahshboard  [Cloudflare dahshboard]( https://dash.cloudflare.com/)
 
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/SIFT_Deploment_vCenter.png"/>
 
