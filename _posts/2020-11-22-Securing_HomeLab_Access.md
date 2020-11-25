@@ -24,6 +24,7 @@ For this post, you will need two things:
 Before diving into the project, let's take a define some terms to establish ground-level of knowledge:   </span>
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/CF_dashboard.png"/>
 
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 `Cloudflare Dashboard`: Cloudflare dashboard is where you define the DNS records and modify them. Since we're on the subject, the dashboard so many many AMAZING services that I can't even begin to fathom what you could accomplish with them. For the time being, we will stick with the basics ones such as:
 
 - DNS: To define our DNS records
