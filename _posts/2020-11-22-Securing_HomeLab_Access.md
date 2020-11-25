@@ -35,9 +35,10 @@ Before diving into the project, let's take a define some terms to establish grou
 
 - DNS: To define our DNS records
 - SSL/TLS: To modify TLS negotiations with the proxy and other parties.
-- Access
-</span>
+- Access: Protect internal resources by requiring authentication
 
+To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page.
+</span>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
 `Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used for microservices.
 </span>
