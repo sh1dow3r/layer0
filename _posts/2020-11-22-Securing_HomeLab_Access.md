@@ -59,18 +59,14 @@ After you have taking the global API Key, add it to the dockerfile in Traefik fo
 ### - Pfsense Setup
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-Now that we have deployed the virtual machine, let's starts the the Cuckoo deployment. 
+Now that we configure Pfsenes to redirect the traffic coming on port 80 and port 443 of the public IP to be redirected to the Traefik reverse proxy. That will be quickly done through the NAT rule to allow port forwarding and through the Firewall Rules to allow incoming traffic to come in.  
 </span>
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/cuckoo_after_installing.png"/> 
-
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-After we confirmed all the configuration is done, we'll navigate to `home/cuckoo/vagrant_files` which has the windows10 virtual machine we're going to use for malware analysis. There should be a bash script called `vagrant_script.sh` that is going to pull a windows 10 image and set it up with Virtualbox then take a stable snapshot.
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/After_vagrant.png"/> 
-
+The Firewall rules would look like something like this:
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/FirewallRule.png.png"/> 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-After windows10 is up and running make sure it's snapshotted and there you go, you have your Cuckoo Sandbox up and ruining! :
-</span>
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Sandbox/Cuckoo_up_and_running.png"/> 
+The NAT rules would look like something like this:
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/NATRule.png"/> 
 
 
 ## Conclusion
