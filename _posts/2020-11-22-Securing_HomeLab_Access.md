@@ -80,6 +80,7 @@ After you have taking the global API Key, add it to the dockerfile in Traefik fo
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 After setting up all the global variables, we need to make small changes to the `traefik.toml` under `traefik` folder. Edits will be as follows
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 - Change your email under `[acme]`
 - Change the domain to your domain under `[acme.domains]`
 - Make sure to set up the right IP of traefik VM.
