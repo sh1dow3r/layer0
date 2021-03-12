@@ -39,7 +39,10 @@ Before diving into the project, let's take a define some terms to establish grou
 
 ##  **Install/Setup**
 
+
 ### - Cloudflare Setup
+
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> 
 Under [Cloudflare dashboard]( https://dash.cloudflare.com)
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> Go to the DNS tab and create a new 'A' record that corrospond to you public IP. An example is shown in the screenshot below. This record will be used for the traefik web interface.
