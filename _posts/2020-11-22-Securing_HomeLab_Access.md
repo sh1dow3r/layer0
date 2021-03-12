@@ -91,7 +91,7 @@ After setting up all the global variables, we need to make small changes to the 
 3- Make sure to set up the right IP of traefik VM.
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_IP.png"/>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-- Make sure to add each mircoservice you would like to add to both `[backends]` and `[frontends]` following the same format of the existing record 'web01'.
+- Make sure to add each mircoservice you would like to add to both `[backends]` and `[frontends]` following the same format of the existing record `web01`.
 
 ### - pfSense Setup
 
