@@ -44,7 +44,7 @@ Before diving into the project, let's take a define some terms to establish grou
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 Under [Cloudflare dashboard]( https://dash.cloudflare.com)
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Go to the DNS tab and create a new 'A' record that corrospond to you public IP. An example is shown in the screenshot below. This record will be used for the traefik web interface.
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Go to the DNS tab and create a new 'A' record that correspond to you public IP. An example is shown in the screenshot below. This record will be used for the traefik web interface.
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/CF_DNS.png"/>
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;;">
@@ -87,6 +87,10 @@ After setting up all the global variables, we need to make small changes to the 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 3- Make sure to set up the right IP of traefik VM. <br />
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_IP.png"/> <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">4- Make sure to add each mircoservice you would like to add to both `[backends]` and `[frontends]` following the same format of the existing record `web01`.
+
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Final step would be to bring spawn the docker instance using the following command: <br />
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+`root$ docker-compose up -d`
 
 ### - pfSense Setup
 
