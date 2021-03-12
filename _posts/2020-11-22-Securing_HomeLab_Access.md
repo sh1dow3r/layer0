@@ -85,7 +85,7 @@ After setting up all the global variables, we need to make small changes to the 
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">2- Change the domain to your domain under `[acme.domains]` <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 3- Make sure to set up the right IP of traefik VM. <br />
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_IP.png"/> <br />
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_IP.png"/>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">4- Make sure to add each mircoservice you would like to add to both `[backends]` and `[frontends]` following the same format of the existing record `web01`.
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> Final step would be to bring spawn the docker instance using the following command: <br />
