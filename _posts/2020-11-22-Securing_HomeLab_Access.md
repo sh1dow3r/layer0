@@ -37,11 +37,9 @@ Before diving into the project, let's take a define some terms to establish grou
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik.png"/>
 </span>
 
-##  **Install/Setup**
-
+## **Install/Setup**
 
 ### - Cloudflare Setup
-
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 Under [Cloudflare dashboard]( https://dash.cloudflare.com)
@@ -54,6 +52,7 @@ Here's an example of adding a web01 record.
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/CF_web01.png"/>
 
 #### Securing your mircoservices with Cloudflear Access
+
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 Cloudflare provides you with functionality where you can limit the access of specific page to certain users. The identity provider varies based on your choosing. Every identity provider has their instruction written after you choose it.
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
