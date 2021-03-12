@@ -14,7 +14,7 @@ If you have wonder if there is a way to access your web console of your homelab 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 For this post, you will need three things: <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-1- Router that has public IP.  <br />
+1- Router that has public IP. In this blog I choose pfsense ❤   <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 2- Virtual machine that has docker installed and has access to the internet.  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
@@ -33,7 +33,7 @@ Before diving into the project, let's take a define some terms to establish grou
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> 3- Access: Protect internal resources by requiring authentication <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;"> To read more about these services, visit their [documentation]( https://support.cloudflare.com/hc/en-us/articles/205075117-Understanding-the-Cloudflare-dashboard) page.
 <span style="color: #f2cf4a; font-family: Babas; font-size: 1.1em;">  
-`Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used with microservices in the cloud(Docker swarm, Kubernetes). 
+`Traefik`: Traefik is a dockerized and open-source reverse proxy and load balancer typically used with microservices in the cloud(Docker swarm, Kubernetes).
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik.png"/>
 </span>
 
