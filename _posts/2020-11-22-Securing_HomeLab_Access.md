@@ -8,13 +8,14 @@ categories: Homelab, Cloudflare, Virtualization
 ## **Introduction**
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
+Using only VPN as your main method to access you homelab environment is not alway as reliable as you would hope so.  VPN sometimes is unstable and hard to troubleshoot, especially remotely.
 If you have wonder if there is a way to access your web console of your homelab hypervisor externally and restrict access to it, this blog is what you are seeking. In this blog, I will show a use case where you can use an open-source reverse proxy alongside Cloudflare "awesome" dashboard functionality.</span>
 
 ## What you will need?
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 For this post, you will need three things: <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-1- Router that has public IP. In this blog I choose pfsense ❤   <br />
+1- Router that has public IP. In this blog I choose pfSense ❤   <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 2- Virtual machine that has docker installed and has access to the internet.  <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
@@ -57,7 +58,7 @@ Here's an example of adding a web01 record.
 Cloudflare provides you with functionality where you can limit the access of specific page to certain users. The identity provider varies based on your choosing. Every identity provider has their instruction written after you choose it.
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 After you setup your login method create an Access policy for your microservice you want to limit its access. 
-In the screenshot below, I'm creating an access policy that limits the access of web01 page to the user with `l33t@gamil.com` eamil. There are many ways to restrict access to a page that is better than what I'm showing that Cloudflare feature such as ("Emails ends with", "IP range", "Access Service Token", ... ).
+In the screenshot below, I'm creating an access policy that limits the access of web01 page to the user with `l33t@gamil.com` email. There are many ways to restrict access to a page that is better than what I'm showing that Cloudflare feature such as ("Emails ends with", "IP range", "Access Service Token", ... ).
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/CF_AccessPolicy.png"/>
 
 ### - VM setup
@@ -78,10 +79,10 @@ After you have taking the global API Key, add it to the dockerfile in Traefik fo
 <img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_Dockerfile.png"/> 
 
 
-### - Pfsense Setup
+### - pfSense Setup
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">  
-Now that we configure Pfsenes to redirect the traffic coming on port 80 and port 443 of the public IP to be redirected to the Traefik reverse proxy. That will be quickly done through the NAT rule to allow port forwarding and through the Firewall Rules to allow incoming traffic to come in.  
+Now that we configure pfSense to redirect the traffic coming on port 80 and port 443 of the public IP to be redirected to the Traefik reverse proxy. That will be quickly done through the NAT rule to allow port forwarding and through the Firewall Rules to allow incoming traffic to come in.  
 </span>
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
 The Firewall rules would look like something like this:
@@ -95,7 +96,7 @@ The NAT rules would look like something like this:
 ## Conclusion
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
- Cloudflare and Traefik </span >
+ In this blog I explained how to add a secondary access to your homelab using Cloudflare free features and using Traefik reverse proxy. I also touched a bit how to configure the routes on pfSense to allow the traffic through using NAT rules. Using such method can help if you lose you VPN access to your environment and help prevent single point of failure on certain cases. </span>
 
 # References
 
