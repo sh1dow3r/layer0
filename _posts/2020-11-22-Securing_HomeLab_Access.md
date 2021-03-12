@@ -82,16 +82,16 @@ After you have taking the global API Key, add it to the dockerfile in Traefik fo
 After setting up all the global variables, we need to make small changes to the `traefik.toml` under `traefik` folder. Edits will be as follows:
 
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
-1- Change your email under `[acme]`
+1- Change your email under `[acme]` <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
 
 2- Change the domain to your domain under `[acme.domains]`
-<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> 
+<span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;"> <br />
 
 3- Make sure to set up the right IP of traefik VM.
-<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_IP.png"/>
+<img src="https://raw.githubusercontent.com/sh1dow3r/layer0/gh-pages/_posts/img/Remote_Access_Homelab/Traefik_IP.png"/> <br />
 <span style="color: #f2cf4a; font-family: Babas; font-size: 0.9em;">
-- Make sure to add each mircoservice you would like to add to both `[backends]` and `[frontends]` following the same format of the existing record `web01`.
+- Make sure to add each mircoservice you would like to add to both `[backends]` and `[frontends]` following the same format of the existing record `web01`. 
 
 ### - pfSense Setup
 
